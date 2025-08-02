@@ -39,9 +39,14 @@
     }
     .souvenir-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 16px;
       margin-top: 20px;
+    }
+    @media (min-width: 480px) {
+  .souvenir-grid {
+    grid-template-columns: repeat(4, 1fr);
+     }
     }
     .souvenir-item {
       background-color: white;
